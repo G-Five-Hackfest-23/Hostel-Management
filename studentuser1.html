@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Prosto+One&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Prosto One', cursive;
+        }
+
+        .container {
+            height: 100vh;
+            max-width: 100vw;
+            margin: 0;
+            /* position: absolute; */
+        }
+
+        .header {
+            /* position: absolute; */
+            max-width: 100vw;
+            min-height: 20vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 40px;
+            /* flex-direction: column; */
+
+            background-color: #7880B5;
+        }
+
+        .text {
+            width: 35%;
+            /* position: relative; */
+            /* margin:auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor:default;
+            user-select: none;
+        }
+
+        .card {
+            z-index: 1;
+            /* grid-row:1; */
+            grid-row: 5;
+            /* grid-column: auto; */
+            /* row-gap: 200px; */
+            /* grid-row: 1; */
+            display: inline-grid;
+            row-gap: 20%;
+        }
+
+        /* .middle{
+            width: 100vw;
+            margin: auto;
+        } */
+        .middle {
+
+            /* height: 100vh; */
+            width: 100%;
+            background: linear-gradient(0, #6BBAEC, #7880B5);
+        }
+
+        .cards {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            width: 40vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            font-size: 15px;
+            font-weight: 500;
+            /* margin: 5% 10%; */
+
+
+            border-radius: 20px;
+            background: none;
+            color: #ffffff;
+            padding: 1rem 4rem;
+            /* width: 50%; */
+            transition: 0.25s;        
+            font-family: 'Prosto One', cursive;
+
+        }
+
+        .btn:hover {
+            color: black;
+            background: #829dc9;
+            border: solid white 2px;
+            box-shadow: 2px 2px 5px #ccdbf3, -2px -2px 5px #b1bed4, 2px -2px 5px #b6c8e6, -2px 2px 5px #9faec7;
+            cursor: pointer;
+
+        }
+
+        .user {
+            display: none;
+        }
+
+        .btnsmall {
+
+            padding: 10% 25%;
+            font-size: small;
+            font-family: "Prosto One",cursive;
+        }
+
+        .userimg img {
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        .links a {
+            color: black;
+            padding: 0 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .links a::before {
+            content: "";
+            width: 100%;
+            border-right: 2px solid #b6c8e6;
+            margin-right: 5px;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+            transition: 0.5s;
+        }
+
+        footer {
+            height: 15vh;
+            background: #bcc4db;
+            padding: 1% 10%;
+            text-align: center;
+        }
+        footer span{
+            padding: 0 20px;
+        }
+        footer span a{
+            text-decoration: none;
+            color: black;
+        }
+        footer span a:hover{
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="text">
+                <h1 style="margin: 0%;">Hostel Management</h1>
+                <span>Developed by Team G-Five</span>
+            </div>
+            <div class="links">
+                <span><a href="/loginpage.html">Home</a></span>
+                <span><a href="/">About Us</a></span>
+                <span><a href="/">Contact</a></span>
+            </div>
+            <div class="userimg">
+                <img src="/WIN_20221022_11_27_27_Pro.jpg" height="50px" width="50px" alt="User_image">
+            </div>
+            <div class="profile">
+
+                <button class="btn btnsmall">Manage Profile</button>
+            </div>
+            <div class="user">
+                <img src="/WIN_20221022_11_27_27_Pro.jpg" height="50px" width="50px" alt="User_image">
+                <span>Sandeep Singh</span>
+                <span>Tagore</span>
+                <span>G-79</span>
+
+            </div>
+
+
+        </header>
+        <div class="middle">
+            <div class="cards">
+
+                <button class="card btn">Allocation</button>
+                <hr width="100%" color="black">
+                <button class="card btn">Deallocation</button>
+                <hr width="100%" color="black">
+                <button class="card btn">Mess TimeTable</button>
+                <hr width="100%" color="black">
+                <button class="card btn">Report a problem</button>
+                <hr width="100%" color="black">
+                <button class="card btn">Rules</button>
+                <!-- <hr width="100%" color="black"> -->
+            </div>
+        </div>
+        <footer>
+            <h2 style="margin: 0; text-align: center;">Team Members</h2>
+            <p style="margin: 0; text-align: center;">Please follow our insta handles</p>
+            <hr>
+            <span>
+                <a href="https://instagram.com/thisisadityakumarkasaudhan?igshid=Yzg5MTU1MDY=" target="_blank">Aditya Kumar Kasaudhan</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/mansi_pandey_2003?igshid=Yzg5MTU1MDY=" target="_blank">Mansi Pandey</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/omi_520?igshid=Yzg5MTU1MDY=" target="_blank">Om Shandilya</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/sandy_1711_?igshid=YmMyMTA2M2Y=" target="_blank">Sandeep Singh</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/uj.ujjawal?igshid=Yzg5MTU1MDY=" target="_blank">Ujjawal Srivastava</a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

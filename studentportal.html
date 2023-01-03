@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User>>Student</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            max-width: 100vw;
+            background: rgba(0, 202, 183, 0.5);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 10vh;
+            position:sticky;
+            top: 0;
+        }
+
+        .left {
+            width: 20%;
+            margin: 0 0 0 10%;
+        }
+
+        .right {
+            width: 70%;
+            margin: 0 10% 0 0;
+        }
+
+        #logo {
+            height: 2rem;
+            width: auto;
+            user-select: none;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .listitem a {
+            width: 20%;
+            margin: auto;
+            padding: 0 2rem;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+        .listitem a:hover {
+            color: tomato;
+        }
+
+        .container1 {
+            height: 100vh;
+            max-width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background: url('/istockphoto-1415835098-170667a.jpg'); */
+            background-color: rgb(0, 223, 211);
+            background: linear-gradient(45deg, rgb(0, 223, 211), rgb(4, 92, 104));
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        .texts {
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 2px;
+        }
+
+        .container1 h1,
+        h3,
+        h4 {
+            margin: 0;
+        }
+
+        .container1 p {
+            margin: 20px;
+        }
+
+        .line {
+
+            width: 15vw;
+        }
+
+        .btn1 {
+            text-decoration: none;
+            border: 2px solid black;
+            /* width: 20%; */
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            max-width: 100vw;
+            height: 100vh;
+        }
+
+        .container2 h3 {
+            margin: 15px;
+        }
+
+        .part1 {
+            width: 50%;
+            height: 100vh;
+            background: url('/Sandeep_Singh_stylized_hostel_room_for_student_15911061-fb8f-42fa-8657-ca1e502bbffb.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .featurebox {
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+
+        }
+
+        .btn {
+            background: none;
+            color: white;
+            padding: 10px 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+
+        .btn:hover {
+            color: black;
+            background: whitesmoke;
+            border: 2px solid white;
+            box-shadow: 3px 3px 2px salmon, 3px 3px 2px salmon;
+            transition: 0.5s;
+        }
+
+        .container3 {
+            height: 100vh;
+            max-width: 100vw;
+            background: rgb(187, 236, 238);
+            display: flex;
+        }
+
+        .timetable {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 100%;
+            width: 50%;
+
+
+        }
+
+        .cards {
+            max-height: 100vh;
+            /* margin: 30px; */
+            /* padding: 30px 30px; */
+            display: grid;
+            /* grid-template-columns: 160px 160px 160px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(3,1fr); */
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .messimg {
+            height: 100%;
+            width: 50%;
+            background: url('/Sandeep_Singh_Hostel_food_routine_fd15e6e4-06b5-4ef4-a425-3ba6efccdb98.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            width: 15vh;
+            background-color: white;
+            margin: 10px 10px;
+            padding: 30px 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            border-radius: 5%;
+        }
+
+        .food-card {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            width: 15vh;
+            background-color: white;
+            margin: 10px 10px;
+            padding: 30px 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            border-radius: 5%;
+        }
+
+        .card:hover {
+            /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+            background-color: cadetblue;
+            transition: 0.25s ease-in-out;
+        }
+
+        .container4 {
+            height: 100vh;
+            max-width: 100vw;
+            background: linear-gradient(45deg, rgb(0, 223, 211), rgb(4, 92, 104));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container4 h2 {
+            font-size: 33px;
+            margin: 0%;
+        }
+
+        .container4 p {
+            margin: 1%;
+        }
+
+        .brokenimg {
+            width: 50%;
+            height: 100%;
+            background: url('/Sandeep_Singh_room_with_low_light_broken_door_wires_hanging_cra_b3abc0e5-b61f-426a-bc21-d2dcafe9234c.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .features {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            display: flex;
+        }
+
+        /* footer styling */
+
+
+        footer {
+            height: 30vh;
+            max-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #bcc4db;
+            /* padding: 1% 10%; */
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .insta {
+            margin: 20px;
+        }
+
+        footer span {
+            padding: 0 20px;
+        }
+
+        footer span a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer span a:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .day {
+
+            max-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* justify-items: center; */
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left logo">
+            <img id="logo" src="/SeekPng.com_phone-logo-png_4375713.png" alt="logo">
+        </div>
+        <div class="right">
+            <ul class="list">
+                <li class="listitem"><a href="#home">Home</a></li>
+                <li class="listitem"><a href="#room">Room</a></li>
+                <li class="listitem"><a href="#mess">Mess</a></li>
+                <li class="listitem"><a href="#report">Report</a></li>
+                <li class="listitem"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container1" id="home">
+        <div class="texts">
+
+            <h4>We welcome you to</h4>
+            <h1>Hostel Management</h1>
+            <h3>Developed by Team G-FIVE</h3>
+            <p>Find out more about us one our insta handles....</p>
+            <a class="btn btn1" href="#contact">Contact Us</a>
+            <hr class="line">
+        </div>
+    </div>
+
+    <div class="container2" id="room">
+        <div class="part1">
+            <!-- <div class="hostelimg">
+            </div> -->
+        </div>
+        <div class="featurebox">
+
+            <div>
+                <h3>Here, you can apply for allocation/deallocation of Room</h3>
+                <button class="btn">
+                    Allocation
+                </button>
+                <button class="btn">
+                    Deallocation
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container3" id="mess">
+
+
+
+
+        <div class="timetable">
+            <div id="monday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="tuesday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="wednesday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="thursday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="friday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="saturday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="sunday" class="day" style="display: none;">
+                <div class="food-card" id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+
+
+
+            <!--  change style below -->
+            <div class="cards hide">
+                <div class="card" onclick="toggle()">
+                    Monday
+                </div>
+                <div class="card" onclick="toggle()">
+                    Tuesday
+                </div>
+                <div class="card" onclick="toggle()">
+                    Wednesday
+                </div>
+                <div class="card" onclick="toggle()">
+                    Thursday
+                </div>
+                <div class="card" onclick="toggle()">
+                    Friday
+                </div>
+                <div class="card" onclick="toggle()">
+                    Saturday
+                </div>
+                <div class=""></div>
+                <div class="card" onclick="toggle()">
+                    Sunday
+                </div>
+                <div class=""></div>
+            </div>
+        </div>
+    
+    <div class="messimg">
+
+    </div>
+
+    </div>
+    <div class="container4" id="report">
+        <div class="brokenimg"></div>
+        <div class="featurebox">
+            <h2>Washroom isn't cleaned,</h2>
+            <h3>worry not,</h3>
+            <p> report it down here, we will get it fixed for you</p>
+            <button class="btn">Report A Problem</button>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="insta">
+
+            <h2 style="margin: 0; text-align: center;">Team Members</h2>
+            <p style="margin: 0; text-align: center;">Please follow our insta handles</p>
+            <hr>
+            <span>
+                <a href="https://instagram.com/thisisadityakumarkasaudhan?igshid=Yzg5MTU1MDY=" target="_blank">Aditya
+                    Kumar
+                    Kasaudhan</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/mansi_pandey_2003?igshid=Yzg5MTU1MDY=" target="_blank">Mansi Pandey</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/omi_520?igshid=Yzg5MTU1MDY=" target="_blank">Om Shandilya</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/sandy_1711_?igshid=YmMyMTA2M2Y=" target="_blank">Sandeep Singh</a>
+            </span>
+            <span>
+                <a href="https://instagram.com/uj.ujjawal?igshid=Yzg5MTU1MDY=" target="_blank">Ujjawal Srivastava</a>
+            </span>
+        </div>
+    </footer>
+    <script>
+        card = document.querySelectorAll('.card');
+        cards = document.querySelector('.cards');
+       
+        cards.classList.toggle('hide');
+        function toggle() {
+            cards.classList.toggle('hide');
+        }
+    </script>
+</body>
+
+</html>
