@@ -1,0 +1,19 @@
+{
+  "name": "ps02",
+  "version": "1.0.0",
+  "description": "Student portal for hostel management",
+  "main": "studentportal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-Five-Hackfest-23/Hostel-Management.git"
+  },
+  "author": "Sandeep Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G-Five-Hackfest-23/Hostel-Management/issues"
+  },
+  "homepage": "https://github.com/G-Five-Hackfest-23/Hostel-Management#readme"
+}
