@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User>>Student</title>
+    <link href='https://css.gg/moon.css' rel='stylesheet'>
     <link rel="stylesheet"type="text/css" href="css/studentportal.css">
+    <link href='https://css.gg/sun.css' rel='stylesheet'>
+    <script src="/studentportal.js"></script>
 </head>
 
 <body>
@@ -21,7 +24,14 @@
                 <li class="listitem"><a href="#mess">Mess</a></li>
                 <li class="listitem"><a href="#report">Report</a></li>
                 <li class="listitem"><a href="#contact">Contact Us</a></li>
+                
             </ul>
+        </div>
+        <div class="dark">
+            <i class="gg-sun"></i>
+            <i class="gg-moon"></i>
+        </div>
+            
         </div>
     </header>
     <div class="container1" id="home">
@@ -42,8 +52,8 @@
             </div> -->
         </div>
         <div class="featurebox">
-
-            <div>
+<!--  display none is done here -->
+            <div style="display: none;">
                 <h3>Here, you can apply for allocation/deallocation of Room</h3>
                 <button class="btn">
                     Allocation
@@ -51,6 +61,90 @@
                 <button class="btn">
                     Deallocation
                 </button>
+            </div>
+            <div class="selectroom">
+                <div class="cards cards-room">
+                    <div class="card card-room">1</div>
+                    <div class="card card-room">2</div>
+                    <div class="card card-room">3</div>
+                    <div class="card card-room">4</div>
+                    <div class="card card-room">5</div>
+                    <div class="card card-room">6</div>
+                    <div class="card card-room">7</div>
+                    <div class="card card-room">8</div>
+                    <div class="card card-room">9</div>
+                    <div class="card card-room">10</div>
+                    <div class="card card-room">11</div>
+                    <div class="card card-room">12</div>
+                    <div class="card card-room">13</div>
+                    <div class="card card-room">14</div>
+                    <div class="card card-room">15</div>
+                    <div class="card card-room">16</div>
+                    <div class="card card-room">17</div>
+                    <div class="card card-room">18</div>
+                    <div class="card card-room">19</div>
+                    <div class="card card-room">20</div>
+                    <div class="card card-room">21</div>
+                    <div class="card card-room">22</div>
+                    <div class="card card-room">23</div>
+                    <div class="card card-room">24</div>
+                    <div class="card card-room">25</div>
+                    <div class="card card-room">26</div>
+                    <div class="card card-room">27</div>
+                    <div class="card card-room">28</div>
+                    <div class="card card-room">29</div>
+                    <div class="card card-room">30</div>
+                    <div class="card card-room">31</div>
+                    <div class="card card-room">32</div>
+                    <div class="card card-room">33</div>
+                    <div class="card card-room">34</div>
+                    <div class="card card-room">35</div>
+                    <div class="card card-room">36</div>
+                    <div class="card card-room">37</div>
+                    <div class="card card-room">38</div>
+                    <div class="card card-room">39</div>
+                    <div class="card card-room">40</div>
+                    <div class="card card-room">41</div>
+                    <div class="card card-room">42</div>
+                    <div class="card card-room">43</div>
+                    <div class="card card-room">44</div>
+                    <div class="card card-room">45</div>
+                    <div class="card card-room">46</div>
+                    <div class="card card-room">47</div>
+                    <div class="card card-room">48</div>
+                    <div class="card card-room">49</div>
+                    <div class="card card-room">50</div>
+                    <div class="card card-room">51</div>
+                    <div class="card card-room">52</div>
+                    <div class="card card-room">53</div>
+                    <div class="card card-room">54</div>
+                    <div class="card card-room">55</div>
+                    <div class="card card-room">56</div>
+                    <div class="card card-room">57</div>
+                    <div class="card card-room">58</div>
+                    <div class="card card-room">59</div>
+                    <div class="card card-room">60</div>
+                    <div class="card card-room">61</div>
+                    <div class="card card-room">62</div>
+                    <div class="card card-room">63</div>
+                    <div class="card card-room">64</div>
+                    <div class="card card-room">65</div>
+                    <div class="card card-room">66</div>
+                    <div class="card card-room">67</div>
+                    <div class="card card-room">68</div>
+                    <div class="card card-room">69</div>
+                    <div class="card card-room">70</div>
+                    <div class="card card-room">71</div>
+                    <div class="card card-room">72</div>
+                    <div class="card card-room">73</div>
+                    <div class="card card-room">74</div>
+                    <div class="card card-room">75</div>
+                    <div class="card card-room">76</div>
+                    <div class="card card-room">77</div>
+                    <div class="card card-room">78</div>
+                    <div class="card card-room">79</div>
+                    <div class="card card-room">80</div>
+                </div>
             </div>
         </div>
     </div>
@@ -60,7 +154,7 @@
 
 
         <div class="timetable">
-            <div id="monday" class="day" style="display: none;">
+            <div class="day hide monday" >
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -78,7 +172,25 @@
                     <h3></h3>
                 </div>
             </div>
-            <div id="tuesday" class="day" style="display: none;">
+            <div class="day hide tuesday">
+                <div class="food-card" >id="breakfast">
+                    Breakfast
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="lunch">
+                    Lunch
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="snacks">
+                    Snacks
+                    <h3></h3>
+                </div>
+                <div class="food-card" id="dinner">
+                    Dinner
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="day hide wednesday">
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -96,7 +208,7 @@
                     <h3></h3>
                 </div>
             </div>
-            <div id="wednesday" class="day" style="display: none;">
+            <div class="day hide thursday">
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -114,7 +226,7 @@
                     <h3></h3>
                 </div>
             </div>
-            <div id="thursday" class="day" style="display: none;">
+            <div class="day hide friday">
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -132,7 +244,7 @@
                     <h3></h3>
                 </div>
             </div>
-            <div id="friday" class="day" style="display: none;">
+            <div class="day hide saturday">
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -150,25 +262,7 @@
                     <h3></h3>
                 </div>
             </div>
-            <div id="saturday" class="day" style="display: none;">
-                <div class="food-card" id="breakfast">
-                    Breakfast
-                    <h3></h3>
-                </div>
-                <div class="food-card" id="lunch">
-                    Lunch
-                    <h3></h3>
-                </div>
-                <div class="food-card" id="snacks">
-                    Snacks
-                    <h3></h3>
-                </div>
-                <div class="food-card" id="dinner">
-                    Dinner
-                    <h3></h3>
-                </div>
-            </div>
-            <div id="sunday" class="day" style="display: none;">
+            <div class="day hide sunday">
                 <div class="food-card" id="breakfast">
                     Breakfast
                     <h3></h3>
@@ -190,28 +284,29 @@
 
 
             <!--  change style below -->
-            <div class="cards hide">
+            <!-- hide -->
+            <div class="cards ">
                 
-                <div class="card" onclick="toggle()">
-                    Monday                
+                <div id="mon"class="card" onclick="toggle()">
+                    Monday            
                 </div>
-                <div class="card" onclick="toggle()">
+                <div id="tue" class="card" onclick="toggle()">
                     Tuesday
                 </div>
-                <div class="card" onclick="toggle()">
+                <div id="wed"class="card" onclick="toggle()">
                     Wednesday
                 </div>
-                <div class="card" onclick="toggle()">
+                <div id="thu" class="card" onclick="toggle()">
                     Thursday
                 </div>
-                <div class="card" onclick="toggle()">
+                <div id="fri"class="card" onclick="toggle()">
                     Friday
                 </div>
-                <div class="card" onclick="toggle()">
+                <div id="sat"class="card" onclick="toggle()">
                     Saturday
                 </div>
                 <div class=""></div>
-                <div class="card" onclick="toggle()">
+                <div class="card" id="sun" onclick="toggle()">
                     Sunday
                 </div>
                 <div class=""></div>
@@ -257,16 +352,8 @@
             </span>
         </div>
     </footer>
-    <script>
-        card = document.querySelectorAll('.card');
-        cards = document.querySelector('.cards');
-       
-        cards.classList.toggle('hide');
-        function toggle()
-        {
-            cards.classList.toggle('hide');
-        }
-    </script>
+    
+    
 </body>
 
 </html>
