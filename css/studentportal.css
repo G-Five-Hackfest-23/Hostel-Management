@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +76,7 @@ header {
     /* background: url('/istockphoto-1415835098-170667a.jpg'); */
     background-color: rgb(0, 223, 211);
     background: linear-gradient(45deg, rgb(0, 223, 211), rgb(4, 92, 104));
+    /* background: rgba(0, 0, 0, 0.9); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -91,6 +93,7 @@ header {
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+    /* color: white; */
 }
 
 .container1 h1,
@@ -171,6 +174,10 @@ h4 {
     max-width: 100vw;
     background: rgb(187, 236, 238);
     display: flex;
+    background: url('/Sandeep_Singh_Hostel_food_routine_render_in_8k_8daef9ed-8331-4043-97c4-2b6b8f0cd024.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 }
 
 .timetable {
@@ -178,7 +185,7 @@ h4 {
     justify-content: center;
     align-items: center;
     max-height: 100%;
-    width: 50%;
+    width: 100%;
 
 
 }
@@ -198,9 +205,10 @@ h4 {
 }
 
 .messimg {
+    display: none;
     height: 100%;
     width: 50%;
-    background: url('/Sandeep_Singh_Hostel_food_routine_fd15e6e4-06b5-4ef4-a425-3ba6efccdb98.png');
+    background: url('/Sandeep_Singh_Hostel_food_routine_render_in_8k_8daef9ed-8331-4043-97c4-2b6b8f0cd024.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -216,6 +224,8 @@ h4 {
     padding: 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     border-radius: 5%;
+    
+
 }
 
 .food-card {

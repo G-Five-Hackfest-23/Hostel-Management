@@ -29,6 +29,7 @@ body {
 }
 .btn1{
     margin: 0 15px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 .btn:hover ,.btn1:focus{
     color: rgb(4, 92, 104);
@@ -78,4 +79,11 @@ input{
 .forgot a{
     text-decoration: none;
     color: tomato;
+}
+.small
+{
+    font-size: 15px;
+    color: grey;
+    font-weight: 100;
+    text-align: left;
 }
