@@ -1,17 +1,17 @@
-const express=require("express");
-const app=express();
-const https=require("https");
-const bodyparser=require("body-parser");
-app.use(express.static(__dirname+"public"));
-app.use(bodyparser.urlencoded({extended:true}));
-app.get("/",function(req,res)
-{
-    res.sendFile(__dirname+"/studentportal.html");
+// const express=require("express");
+// const app=express();
+// const https=require("https");
+// const bodyparser=require("body-parser");
+// app.use(express.static(__dirname+"public"));
+// app.use(bodyparser.urlencoded({extended:true}));
+// app.get("/",function(req,res)
+// {
+//     res.sendFile(__dirname+"/studentportal.html");
 
-});
+// });
 
 var  card = document.querySelectorAll('.card');
-var   cards = document.querySelector('.cards');
+var   cards = document.querySelector('cards');
 var   timetable = document.querySelector('.timetable');
 var  mon=document.getElementById('mon');
 var monday=document.querySelector('monday');
@@ -27,11 +27,11 @@ var sun=document.getElementById('sun');
 var sunday=document.querySelector('sunday');
 var thu=document.getElementById('thu');
 var thursday=document.querySelector('thursday');
-   function toggle(){
-       cards.classList.add('hide');
-       monday.classList.remove('hide');
+
+   mon.onclick=function(){
+    cards.toggle('hide');
+    mon.classList.toggle('hide');
    }
-   
-app.listen(5000,function(){
-    console.log("Server created at port 5000");
-});
+// app.listen(5000,function(){
+//     console.log("Server created at port 5000");
+// });
