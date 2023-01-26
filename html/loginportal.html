@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/loginportal.css">
+    <link rel="stylesheet" href="/css/loginportal.css">
+    <link rel="icon" href="/images/G5-icon.png" >
 </head>
 <body>
+    <div class="bodyofloader hide">
+
+        <div class="loader">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="text">
+            <h1>Please Wait</h1>
+            <h1>Loading...</h1>
+        </div>
+    </div>
     <div class="container">
-        <div class="outer" >
+        <div class="outer">
             <div class="info">
                 <h1 style="margin: 0;">HOSTEL MANAGEMENT</h1>
                 <p style="margin: 0;">By Team G-FIVE</p>
@@ -17,10 +29,13 @@
                 <p style="margin:0;">Please select your user profile</p>
             </div>
             <div class="user-select-menu">
-                <button class="btn" id="student">Student</button><button class="btn" id="warden">Warden</button><button class="btn" id="messworker">Mess Worker</button>
+                <button class="btn"  id="student">Student</button>
+                <button class="btn"  id="warden">Warden</button>
+                <button class="btn"  id="messworker">Mess Worker</button>
             </div>
         </div>
        
     </div>
+    <script src="/js/loginportal.js"></script>
 </body>
 </html>

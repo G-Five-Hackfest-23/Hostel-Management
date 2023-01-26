@@ -94,11 +94,13 @@ cancel2.addEventListener("click",function(){
 for(var i=0;i<cardroom.length;i++)
 {
    cardroom[i].addEventListener("click",function(){
+      console.log(n=this.innerHTML);
       selectroom.classList.add("hide");
       choice.classList.remove("hide");
       confirm.addEventListener("click",function(){
+         
          choice.classList.add("hide");
-         console.log(roomno.innerHTML=this.innerHTML+" ");
+         console.log(roomno.innerHTML=n+" ");
          aftertext.classList.remove("hide");
          setTimeout(waiting
          ,3000);
