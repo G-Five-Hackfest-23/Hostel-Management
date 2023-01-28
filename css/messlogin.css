@@ -84,7 +84,7 @@ input{
     width: 20px;
     color: black;
     position: absolute;
-    top: 30%;
+    /* top: 30%; */
     left: 45%;
 }
 .back svg{

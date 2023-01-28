@@ -163,6 +163,7 @@ light.addEventListener("click",function(){
       container2.style.background="none";
       container4.style.background="linear-gradient(45deg,rgb(0,223,211),rgb(3,69,78))";
       reportsection.style.color="black";
+      container1.style.color="#000";
 });
 var footera=document.querySelectorAll(".footera");
 var btn=document.querySelectorAll(".btn");
@@ -193,6 +194,8 @@ dark.addEventListener("click",function(){
      container2.style.background="lightslategray";
      container4.style.background="linear-gradient(45deg,rgb(11,100,96),rgb(2,44,49))";
      reportsection.style.color="paleturquoise";
+     container1.style.color="#fff";
+
 });
 
 

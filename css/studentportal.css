@@ -10,6 +10,7 @@ body {
     height: 100vh;
     max-width: 100vw;
     background: rgba(0, 202, 183, 0.5);
+    background: linear-gradient(-270deg, rgb(0, 223, 211), rgb(4, 92, 104));
 
 }
 
@@ -159,6 +160,7 @@ h4 {
     max-width: 100vw;
     height: 100vh;
     transition: 1.5s ease-in-out;
+
 }
 
 .container2 h3 {
@@ -166,8 +168,8 @@ h4 {
 }
 
 .part1 {
-    width: 50%;
-    height: 100vh;
+    width: 30%;
+    height: 60vh;
     background: url('/images/Sandeep_Singh_stylized_hostel_room_for_student_15911061-fb8f-42fa-8657-ca1e502bbffb.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,6 +213,7 @@ h4 {
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0 10px;
+    border-radius: 20px;
 }
 
 .btn:hover {
@@ -365,8 +368,9 @@ h4 {
 }
 
 .brokenimg {
-    width: 50%;
-    height: 100%;
+    width: 30%;
+    height: 60%;
+
     background: url('/images/Sandeep_Singh_room_with_low_light_broken_door_wires_hanging_cra_b3abc0e5-b61f-426a-bc21-d2dcafe9234c.png');
     background-repeat: no-repeat;
     background-size: cover;
