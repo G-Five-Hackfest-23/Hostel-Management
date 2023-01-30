@@ -6,6 +6,6 @@ svg.addEventListener("click",function(){
     container.classList.add("hide");
     setTimeout(() => {
         self.close();
-        window.open("/html/loginportal.html");
+        window.open("/html/index.html");
     }, 500);
 })

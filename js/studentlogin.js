@@ -10,7 +10,7 @@ svg.addEventListener("click",function()
     setTimeout(function(){
 
         self.close();
-        window.open("/html/loginportal.html");
+        window.open("/html/index.html");
     },500);
 })
 var btn=document.querySelector(".btn");
