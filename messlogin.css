@@ -26,9 +26,11 @@ body {
     font-weight: bolder;
     text-transform: uppercase;
     margin: 40px 15px 0 15px;
+    border-radius: 20px;
 }
 .btn1{
     margin: 0 15px;
+    border-radius: 10px;
 }
 .btn:hover ,.btn1:focus{
     color: rgb(4, 92, 104);
@@ -157,4 +159,17 @@ input{
 }
 .hide{
     display: none;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .card{
+        width: 80%;
+        height: 60%;
+    }
+    .back{
+        left: 25%;
+    }
 }

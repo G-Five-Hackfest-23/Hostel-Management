@@ -20,6 +20,7 @@ body{
     align-items: center;
 
 }
+
 .outer{
     height: 80%;
     width: 80%;
@@ -36,6 +37,9 @@ body{
 {
     text-align: center;
 }
+.info p{
+    margin-top: 10px;
+}
 .btn {
     background: none;
     color: black;
@@ -44,6 +48,7 @@ body{
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0 10px;
+    border-radius:20px;
 }
 
 .btn:hover{
@@ -53,15 +58,24 @@ body{
     box-shadow: 3px 3px 2px rgb(4, 92, 104), 3px 3px 2px rgb(4, 92, 104);
     transition: 0.5s;
 }
+h3{
+    display: none;
+}
 
-
+.info{
+    margin-bottom: 30px;
+}
 
 .user-select-menu
 {
-    margin: 50px 10px;
+    margin: 40px 10px;
 }
-@media only screen and (max-width:1000px)
+@media only screen and (max-width:768px)
 {
+    *{
+        margin: 0;
+        padding: 0;
+    }
        .user-select-menu
        {
         display: flex;
@@ -74,6 +88,32 @@ body{
        {
         margin: 7px 0;
        }
+       .info{
+        margin: 20px;
+        padding: 10px;
+       }
+       .info h3{
+            margin: auto;
+       }
+       .info p:nth-child(4){
+            margin-top: 20px;
+        }
+        .user-select-menu{
+            margin: 0;
+        }
+        body{
+            max-height: 100vh;
+            max-width: 100vw;
+        }
+        .outer{
+            height: 65vh;
+        }
+        h1{
+            color:cornflowerblue;
+        }
+        h3{
+            display: none;
+        }
 }
 
 

@@ -18,6 +18,7 @@ var sun=document.querySelector("#sun");
 console.log(mon);
 console.log(cardday);
 function hide(){
+   $(".qcards").hide();
    mon.classList.add("hide");
    tue.classList.add("hide");
    wed.classList.add("hide");
@@ -36,6 +37,7 @@ var day=document.querySelectorAll(".day");
 console.log(day);
 function show()
 {
+   $(".qcards").show();
    this.classList.add("hide");
    mon.classList.remove("hide");
    tue.classList.remove("hide");
@@ -164,6 +166,20 @@ light.addEventListener("click",function(){
       container4.style.background="linear-gradient(45deg,rgb(0,223,211),rgb(3,69,78))";
       reportsection.style.color="black";
       container1.style.color="#000";
+      $(".card").css("background", "rgb(221,221,221)");
+     $(".card").css("color", "black");
+     
+     $(".food-card").css("background-color", "rgb(221,221,221)");
+     $(".food-card").css("color", "black");
+     
+     $(".problemresponse").css("color", "black");
+     $(".aftercancel").css("color", "black");
+     $("h3").css("color", "black");
+     $(".aftertext").css("color", "black");
+     $(".confirm-cancel").css("color", "black");
+     $(".confirmcancel").css("color", "black");
+     $(".deallocation").css("color", "black");
+
 });
 var footera=document.querySelectorAll(".footera");
 var btn=document.querySelectorAll(".btn");
@@ -195,6 +211,18 @@ dark.addEventListener("click",function(){
      container4.style.background="linear-gradient(45deg,rgb(11,100,96),rgb(2,44,49))";
      reportsection.style.color="paleturquoise";
      container1.style.color="#fff";
+     $(".card").css("background", "black");
+     $(".card").css("color", "white");
+     $(".food-card").css("background-color", "black");
+     $(".food-card").css("color", "white");
+     $(".problemresponse").css("color", "white");
+     $(".aftercancel").css("color", "white");
+     $("h3").css("color", "white");
+     $(".aftertext").css("color", "white");
+     $(".confirm-cancel").css("color", "white");
+     $(".confirmcancel").css("color", "white");
+     $(".deallocation").css("color", "white");
+
 
 });
 
@@ -218,7 +246,7 @@ reportbtn.addEventListener("click",function(){
       cancelled.classList.add("hide");
       reportsection.classList.remove("hide");
       problems.classList.add("hide");
-   };
+   }; 
    for (let i = 0; i < problem.length; i++) {
       problem[i].addEventListener("click",solver);
       
@@ -236,3 +264,12 @@ function solver() {
       
    },3000);
 };
+
+$(".menuburger").on("click", function () {
+   $(".menuburger").css("display","none");
+   $(".close").css("display", "block");   
+});
+$(".close").on("click", function () {
+   $(".close").css("display","none");
+   $(".menuburger").css("display", "block");   
+});
