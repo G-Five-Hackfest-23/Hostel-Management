@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warden Login</title>
-    <link rel="stylesheet" href="/css/wardenlogin.css">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="/studentlogin.css">
     <link rel="icon" href="/images/G5-icon.png" >
 
 </head>
+
 <body>
     <div class="bodyofloader hide">
-
+        
         <div class="loader">
             <span></span>
             <span></span>
@@ -21,39 +23,40 @@
             <h1>Loading...</h1>
         </div>
     </div>
-    
     <div class="container">
+        
         <!-- <div class="back">
         </div> -->
         <div class="card">
             <hr width="200px">
-            <div class="text1">     
-                <svg class="back" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-
+            <div class="text1"> 
+               <svg class="back" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
                 LOGIN
                 <!-- <hr color="grey" width="100px"> -->
             </div>
-            <form class="det"action="/"method="post">
+            <div class="det">
                 <div class="form-floating">
 
-                    <input type="email"class="btn1 small" name="emailadd" id="emailadd" placeholder="EMAIL ID" required>
+                    <input type="text"class="btn1" name="rollno" id="rollno"placeholder="ROLL NO" minlength="13" maxlength="13" required>
                 </div>
                 <div class="form-floating">
 
-                    <input type="password"class="btn1 small" name="pass" id="pass"placeholder="PASSWORD" min-length="8" required>
+                    <input type="text"class="btn1" name="phno" id="phno"placeholder="PHONE NO" minlength="10" maxlength="10" required>
                 </div>
                 <div class="form-floating">
 
-                    <button class="btn">Sign Me In</button>
+                    <button  class="btn">Sign Me In</button>
                 </div>
                 <div class="forgot form-floating">
                     <span><a href="">Forgot Password?</a></span>
-                    
+                    <br>
+                    <span id="wrong"></span>
                 </div>
                 <hr>
-            </form>
+            </div>
         </div>
     </div>
-    <script src="/js/wardenlogin.js"></script>
+    <script src="/studentlogin.js"></script>
 </body>
+
 </html>

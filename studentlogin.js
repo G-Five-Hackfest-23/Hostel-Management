@@ -10,7 +10,7 @@ svg.addEventListener("click",function()
     setTimeout(function(){
 
         self.close();
-        window.open("/html/index.html");
+        window.open("/index.html");
     },500);
 })
 var btn=document.querySelector(".btn");
@@ -20,8 +20,8 @@ btn.addEventListener("click",function(){
     if(input[0].value==="2022041164" && input[1].value==="8953596712")
     {
         console.log("yes");
-        window.close("/html/studentlogin.html");
-        window.open("/html/studentportal.html");
+        window.close("/studentlogin.html");
+        window.open("/studentportal.html");
     }
     else{
         document.querySelector("#wrong").innerHTML="Wrong Password. Please try again.";
