@@ -8,6 +8,6 @@ svg.addEventListener("click",function(){
     bodyofloader.classList.remove("hide");
     setTimeout(function(){
         self.close();
-        window.open("/index.html");
+        window.open("index.html");
     },500);
 })

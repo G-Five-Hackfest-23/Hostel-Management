@@ -11,7 +11,7 @@ student.addEventListener("click",function(){
     // document.body.style.background="none";/
     setTimeout(function(){ 
         self.close();
-        window.open("/studentlogin.html");
+        window.open("studentlogin.html");
     },500);
  
     
@@ -28,7 +28,7 @@ messworker.addEventListener("click",function()
     setTimeout(function(){
 
         self.close();
-        window.open("/messlogin.html");
+        window.open("messlogin.html");
     },500);
 })
 var warden=document.querySelector("#warden");
@@ -41,7 +41,7 @@ warden.addEventListener("click",function(){
     setTimeout(function(){
 
         self.close();
-        window.open("/wardenlogin.html");
+        window.open("wardenlogin.html");
     },500);
 })
 
