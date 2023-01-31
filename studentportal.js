@@ -267,9 +267,20 @@ function solver() {
 
 $(".menuburger").on("click", function () {
    $(".menuburger").css("display","none");
-   $(".close").css("display", "block");   
+   $(".close").css("display", "block");  
+    
+   // $(".dropdown").fadeIn(); 
+     $(".dropdown").css("transition", "1s ease-in-out");
+
+      $(".dropdown").css("left", "0");
+
+   $(".dropdown").css("display", "block");
 });
 $(".close").on("click", function () {
    $(".close").css("display","none");
-   $(".menuburger").css("display", "block");   
+   $(".menuburger").css("display", "block"); 
+
+   $(".dropdown").css("left","-100vw");
+   $(".dropdown").css("transition","1s ease-in-out");
+   // $(".dropdown").css("bottom", "");
 });

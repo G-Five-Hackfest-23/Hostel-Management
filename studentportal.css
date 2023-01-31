@@ -582,6 +582,9 @@ footer .darkfa {
     margin: 6px;
     display: none;
 }
+.dropdown{
+    display: none;
+}
 @media screen and (max-width:768px) {
     .right {
         display: none;
@@ -599,6 +602,9 @@ footer .darkfa {
         margin: auto;
     }
 
+    .container1{
+        height: 70vh;
+    }
     .menuburger {
         display: block;
     }
@@ -617,6 +623,7 @@ footer .darkfa {
     }
     .container2 {
         flex-direction: column-reverse;
+        /* height: 80vh; */
     }
     
     .part1 {
@@ -663,8 +670,12 @@ footer .darkfa {
     line-height: 20px;
 }
 
+    .container3{
+        height: 75vh;
+    }
     .container4 {
         flex-direction: column;
+        height: 70vh;
     }
     .brokenimg {
         width: 40vh;
@@ -757,4 +768,34 @@ footer .darkfa {
         /* width: 20%; */
         margin-bottom: 10px;
     }
+    .dropdown{
+        /* transition:1s ease-in-out; */
+        display: none;
+        position: absolute;
+        height: 40vh;
+        width: 100vw;
+        top: 8vh;
+        /* bottom: 8vh; */
+        left: -100vw;
+        background: rgba(0, 0, 0, 0.7);
+
+        
+    }
+    
+    .dropdown ul{
+        /* margin: 0; */
+        padding: 0 40px 0 0;
+    }
+    .dropdown ul li{
+        list-style: none;
+        font-weight: 100;
+        
+    }
+    .dropdown ul li a{
+        color: white;
+        font-size:2rem;
+        letter-spacing: 2px;
+        line-height: 35px;
+    }
+    
 }
